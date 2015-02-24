@@ -1,4 +1,18 @@
-{% for line in memory %}
-    {{ line.decode('utf-8') }}
+<html>
+    <body>
+        <h2>Memory</h2>
+        {% for line in memory %}
+            {{ line.decode('utf-8') }} </br>
+        {% endfor %}
 
-    {% endfor %}
+        <h2> CPU </h2>
+        {% for line in sar %}
+            {{ line.decode('utf-8') }} </br>
+        {% endfor %}
+
+        <h2> Load </h2>
+        {% for line in uptime %}
+            {{ line.decode('utf-8') }} </br>
+        {% endfor %}
+    </body> 
+</html>
