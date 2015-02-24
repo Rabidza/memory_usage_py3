@@ -1,14 +1,21 @@
+[http://techarena51.com/index.php/how-to-install-python-3-and-flask-on-linux/]
+
 Simple application which displays useful information like memory usage per process,
 CPU percentage etc using python and a micro framework called flask.
 
 
-I had to do the following:
-[http://www.upubuntu.com/2011/09/check-how-much-ram-programs-are-using.html]
+I had to install the following to get this to work:
+
+    + [http://www.upubuntu.com/2011/09/check-how-much-ram-programs-are-using.html]
+ 
+
 * wget http://www.pixelbeat.org/scripts/ps_mem.py
 * mv ps_mem.py /usr/local/sbin/
 * chmod 755 /usr/local/sbin/ps_mem.py # Could not get this working though, I have to type my root password in the terminal when starting run.py
 
-[http://www.leonardoborda.com/blog/how-to-configure-sysstatsar-on-ubuntudebian/]
+    + [http://www.leonardoborda.com/blog/how-to-configure-sysstatsar-on-ubuntudebian/]
+ 
+
 * Step 1. Install sysstat
 sudo apt-get install sysstat
 
